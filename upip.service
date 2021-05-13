@@ -1,0 +1,12 @@
+[Unit]
+Description=a service recording ip to google drive
+
+[Service]
+User=root
+WorkingDirectory=/etc/upip
+ExecStart=/etc/upip/exec
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
