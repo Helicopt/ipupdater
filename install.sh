@@ -14,8 +14,8 @@ sudo cp -r ./configs /etc/upip/
 sudo chmod +x /etc/upip/exec
 
 sudo apt-get install python3-pip
-sudo python3 -m pip install -H pygsheets
-sudo python3 -m pip install -H --upgrade six
+sudo -H python3 -m pip install pygsheets
+sudo -H python3 -m pip install --upgrade six
 
 sudo systemctl daemon-reload
 sudo systemctl start upip.service
