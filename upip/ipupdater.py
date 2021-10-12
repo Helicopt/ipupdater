@@ -66,7 +66,12 @@ def update():
 
 
 if __name__ == '__main__':
-    previous_ip = update()
+    while True:
+        try:
+            previous_ip = update()
+            break
+        except:
+            time.sleep(10)
     cnt = 0
     regular_cnt = 5
 
